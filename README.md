@@ -108,10 +108,12 @@ MongoDB stores data as **documents** inside **collections**.
 if(username === "admin" && password === "1234") {
   localStorage.setItem("admin", "true");
 }
+````
 
 - Dashboard checks `localStorage` before granting access.
 
 ⚠️ **Note:** Replace with secure authentication (JWT, bcrypt, etc.) for production.
+
 
 ---
 
@@ -138,4 +140,3 @@ API Routes (Node.js Backend)
    ↓
 MongoDB Database
 ```
-````
