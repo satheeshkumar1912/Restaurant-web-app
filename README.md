@@ -36,7 +36,7 @@ Customer opens menu → Frontend request → Backend API → MongoDB returns dat
 
 ## 📂 Project Structure
 
-````plaintext
+```
 src/
  ├── pages/
  │    ├── index.js
@@ -55,6 +55,7 @@ src/
  ├── models/
  ├── lib/
  └── public/
+```
 
 # 📂 Project Structure
 
@@ -71,6 +72,7 @@ src/
 MongoDB stores data as **documents** inside **collections**.
 
 **Reservation Example:**
+
 ```json
 {
   "name": "Satheesh",
@@ -78,6 +80,7 @@ MongoDB stores data as **documents** inside **collections**.
   "time": "19:00",
   "guests": 2
 }
+```
 
 ## 📂 Collections Used
 
@@ -100,7 +103,8 @@ MongoDB stores data as **documents** inside **collections**.
 
 - **Login page:** `/admin/login`
 - **Simple demo logic:**
-```js
+
+````js
 if(username === "admin" && password === "1234") {
   localStorage.setItem("admin", "true");
 }
@@ -125,7 +129,7 @@ if(username === "admin" && password === "1234") {
 
 ## 📊 System Architecture Diagram
 
-```plaintext
+```
 User Browser
    ↓
 Next.js Frontend (Pages + Components)
@@ -133,4 +137,5 @@ Next.js Frontend (Pages + Components)
 API Routes (Node.js Backend)
    ↓
 MongoDB Database
+```
 ````
